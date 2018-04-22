@@ -1,9 +1,7 @@
 # rpi2-jupyter
 Jupyter Notebook Docker image for Raspberry Pi 2 (armv7l)
 
-Used [resin/rpi-raspbian](https://hub.docker.com/r/resin/rpi-raspbian/) as base image.
-
-[Berryconda](https://github.com/jjhelmus/berryconda) was used to enable jupyter notebook.
+Used [resin/rpi-raspbian](https://hub.docker.com/r/resin/rpi-raspbian/) as base image, and [Berryconda](https://github.com/jjhelmus/berryconda) for jupyter notebook.
 
 How to Run the image
 ------------
