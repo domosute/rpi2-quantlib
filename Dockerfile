@@ -27,6 +27,4 @@ USER jupyter
 
 WORKDIR /home/jupyter
 
-
-
 CMD ["/bin/bash", "-c", "/opt/conda/bin/jupyter-notebook --ip=*"]
