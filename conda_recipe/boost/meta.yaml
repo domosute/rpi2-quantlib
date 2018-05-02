@@ -1,0 +1,25 @@
+package:
+  name: boost
+  version: 1.66.0
+
+source:
+  fn:  boost_1_66_0.tar.bz2
+  url: https://sourceforge.net/projects/boost/files/boost/1.66.0/boost_1_66_0.tar.bz2
+
+requirements:
+  build:
+    - python
+    - icu
+    - bzip2          
+    - zlib
+
+  run:
+    # python dependency is here due to libboost-python library that depends on
+    # python version
+    - python
+    - icu
+    - zlib
+
+about:
+  home: http://www.boost.org/
+  license: Boost-1.0[root@gig-dr-aco boost]# 
