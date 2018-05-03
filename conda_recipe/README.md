@@ -1,4 +1,4 @@
-[Note]: QuantLib/QuantLib-Python have package dependency which must be resolved prior to the installation of QuantLib/QuantLib-Python. 
+QuantLib/QuantLib-Python have package dependency which must be resolved prior to the installation of QuantLib/QuantLib-Python. 
 
 How to Build
 ------------
