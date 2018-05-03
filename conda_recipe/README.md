@@ -1,5 +1,3 @@
-QuantLib/QuantLib-Python have package dependency which must be resolved prior to the installation of QuantLib/QuantLib-Python. 
-
 How to Build
 ------------
 Under conda environment, execute the following;
@@ -8,6 +6,8 @@ conda build .
 ```
 Package Build Dependency
 ------------
+QuantLib/QuantLib-Python have package dependency which must be resolved prior to the installation of QuantLib/QuantLib-Python. 
+
 ```
 QuantLib
  +- m4
