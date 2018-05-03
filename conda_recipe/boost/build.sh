@@ -2,9 +2,6 @@
 
 set -x -e
 
-PREFIX=/opt/conda
-PYTHON=/opt/conda/bin/python
-PY_VER=3.6
 ADDR_MODEL=32
 ARCH=arm
 
