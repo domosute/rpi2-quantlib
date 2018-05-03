@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export PREFIX=/opt/conda # Adjust accordingly
-
 export CFLAGS="${CFLAGS} -I${PREFIX}/include"
 export CXXFLAGS="${CFLAGS}"
 export CPPFLAGS="-I${PREFIX}/include"
