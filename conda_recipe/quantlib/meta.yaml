@@ -1,5 +1,5 @@
 package:
-  name: quantlib-python
+  name: quantlib
   version: 1.12.1
   
 source:
