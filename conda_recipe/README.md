@@ -1,6 +1,6 @@
 How to Build
 ------------
-Under docker-enabled environment, execute the following;
+Under conda environment, execute the following;
 ``` 
 conda build .
 ```
