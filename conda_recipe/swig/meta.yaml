@@ -1,0 +1,27 @@
+package:
+  name: swig
+  version: 3.0.12
+
+source:
+  fn: swig-3.0.12.tar.gz   [unix]
+  url: http://prdownloads.sourceforge.net/swig/swig-3.0.12.tar.gz
+  sha1: 5cc1af41d041e4cc609580b99bb3dcf720effa25
+
+build:
+  detect_binary_files_with_prefix: True
+
+requirements:
+  build:
+    - pcre
+    - python
+  run:
+    - pcre
+    
+test:
+  commands:
+    - swig -help
+
+about:
+  home: http://www.swig.org/
+  license: GPLv3
+  summary: C/C++ parser code generator
