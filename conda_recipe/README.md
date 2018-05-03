@@ -4,4 +4,4 @@ Under conda environment, execute the following;
 ``` 
 conda build .
 ```
-Built package are stored in https://anaconda.org/domosute/repo
+Built package can be found at Anaconda Cloud repository: https://anaconda.org/domosute/repo
