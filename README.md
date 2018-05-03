@@ -7,7 +7,7 @@ How to Run the image
 ------------
 Under docker-enabled environment, execute the following;
 ```
-docker run -d -it -p 8888:8888 -v $PWD:/home/jupyter --name rpi2-jupyter domosute/rpi2-jupyter
+docker run -d -it -p 8888:8888 -v $PWD:/home/jupyter --name rpi2-quantlib domosute/rpi2-quantlib
 ```
 where "$PWD" is outside working directory in case if persistent storage is preferred.
 
