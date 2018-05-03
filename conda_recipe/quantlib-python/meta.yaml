@@ -15,4 +15,4 @@ requirements:
 about:
   home: http://www.quantlib.org/
   license: https://github.com/lballabio/QuantLib-SWIG/blob/master/LICENSE.TXT
-  summary: "QuantLib-SWIG: language binding for QuantLib"
+  summary: "QuantLib-Python: Python binding for QuantLib"
