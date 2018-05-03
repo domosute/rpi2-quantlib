@@ -7,10 +7,11 @@ source:
   
 requirements:
   build:
+    - automake
+    - autoconf
+    - libtool
     - boost
-    - python
   run:
-    - python
 
 about:
   home: http://www.quantlib.org/
