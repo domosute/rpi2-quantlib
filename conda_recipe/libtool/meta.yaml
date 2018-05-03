@@ -1,10 +1,10 @@
 package:
   name: libtool
-  version: 2.4.2
+  version: 2.4.6
 
 source:
-  fn: libtool-2.4.2.tar.gz
-  url: https://ftp.gnu.org/gnu/libtool/libtool-2.4.2.tar.gz [not win]
+  fn: libtool-2.4.6.tar.gz
+  url: https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.gz [not win]
 
 build:
   number: 0
