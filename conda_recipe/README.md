@@ -1,3 +1,5 @@
+[Note]: QuantLib/QuantLib-Python have package dependency which must be resolved prior to the installation of QuantLib/QuantLib-Python. 
+
 How to Build
 ------------
 Under conda environment, execute the following;
@@ -7,12 +9,6 @@ conda build .
 Package Build Dependency
 ------------
 ```
-QuantLib-Python
- +- python
- +- swig
-     +- pcre
-         +- zlib
-         +- bzip2
 QuantLib
  +- m4
  +- autoconf
@@ -27,5 +23,12 @@ QuantLib
      +- icu
      +- bzip2
      +- zlib
+     
+ QuantLib-Python
+ +- python
+ +- swig
+     +- pcre
+         +- zlib
+         +- bzip2
 ```        
 Built packages can be found at Anaconda Cloud repository: https://anaconda.org/domosute/repo
