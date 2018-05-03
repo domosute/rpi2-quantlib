@@ -2,6 +2,12 @@
 
 set -x -e
 
+PREFIX=/opt/conda
+PYTHON=/opt/conda/bin/python
+PY_VER=3.6
+ARCH_ADDR=32
+ARCH=armv7l
+
 INCLUDE_PATH="${PREFIX}/include"
 LIBRARY_PATH="${PREFIX}/lib"
 
@@ -15,8 +21,8 @@ LIBRARY_PATH="${PREFIX}/lib"
 
 ./b2 -q \
    variant=release \
-   address-model="${ARCH}" \
-   architecture=x86 \
+   address-model="${ARCH_ADDR}" \
+   architecture="${ARCH}" \
    debug-symbols=off \
    threading=multi \
    runtime-link=shared \
