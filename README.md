@@ -1,4 +1,4 @@
-# rpi2-QuantLib
+# rpi2-quantlib
 Jupyter Notebook Docker image for Raspberry Pi 2 (armv7l)
 
 Used [resin/rpi-raspbian](https://hub.docker.com/r/resin/rpi-raspbian/) as base image, and [Berryconda](https://github.com/jjhelmus/berryconda) for jupyter notebook.
