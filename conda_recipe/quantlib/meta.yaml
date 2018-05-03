@@ -3,7 +3,7 @@ package:
   version: 1.12.1
   
 source:
-  git_url: https://github.com/lballabio/QuantLib-SWIG.git
+  git_url: https://github.com/lballabio/quantlib.git
   
 requirements:
   build:
@@ -15,5 +15,5 @@ requirements:
 
 about:
   home: http://www.quantlib.org/
-  license: https://github.com/lballabio/QuantLib-SWIG/blob/master/LICENSE.TXT
+  license: https://github.com/lballabio/QuantLib/blob/master/LICENSE.TXT
   summary: "QuantLib-SWIG: language binding for QuantLib"
