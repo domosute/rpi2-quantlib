@@ -28,4 +28,4 @@ QuantLib
      +- bzip2
      +- zlib
 ```        
-Built package can be found at Anaconda Cloud repository: https://anaconda.org/domosute/repo
+Built packages can be found at Anaconda Cloud repository: https://anaconda.org/domosute/repo
