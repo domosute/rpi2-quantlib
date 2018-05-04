@@ -49,5 +49,7 @@ Then, update
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 ```
+Package Repo Info
+-----------------
 
 Built packages can be found at Anaconda Cloud repository: https://anaconda.org/domosute/repo
