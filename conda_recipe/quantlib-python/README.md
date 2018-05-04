@@ -1,7 +1,7 @@
 Build condition with Raspberry Pi 3 B+
 --------------------------------------
 
-- Make multithreading: set to 2 (Reduced "MULTI_THREAD=2" in build.sh.  "MULTI_THREAD=4" caused memory error)
+- Multithreading: set to 2 (Reduced "MULTI_THREAD=2" in build.sh.  "MULTI_THREAD=4" caused memory error)
 - Swapfile: set to 8GB (Can be less, Swapfile size was not exceeding more than 1.7GB...)
 
 Adjusting Swapfile
