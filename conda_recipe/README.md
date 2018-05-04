@@ -31,8 +31,8 @@ QuantLib
          +- zlib
          +- bzip2
 ```
-Increase Swapfile for build process
------------------------------------
+Adjust Swapfile Setting for Build Process
+-----------------------------------------
 
 Verified build with Raspberry Pi 3 B+. `[Note]: Swapfile need to be increased to pass the process.`
 
