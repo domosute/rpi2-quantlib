@@ -1,5 +1,7 @@
 Used Raspberry Pi 3 B+ for Build.
+
 Swapfile need to be increased to pass the process.
+
 Edit 2 parameters of /etc/dphys-swapfile. (Example: swap file size to 8GB)
 
 ```
