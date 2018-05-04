@@ -1,7 +1,7 @@
 Build condition with Raspberry Pi 3 B+
 
 - Make multithreading: set to 2 (make -j 2 -C Python in build.sh.  "-j 4" ended up with memory error)
-- Swapfile: set to 8GB
+- Swapfile: set to 8GB (Can be less, Swapfile size was not exceeding more than 1.7GB...)
 
 Adjusting Swapfile
 ------------------
