@@ -7,5 +7,5 @@ export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
 
 ./autogen.sh
 ./configure --prefix=$PREFIX
-make -j 4 -C Python
+make -j 2 -C Python
 sudo make -C Python install
