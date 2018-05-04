@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CPU_COUNT=2 # Adjust less if memory error occurs during gcc compilation.
+MULTI_THREAD=2 # Adjust it to less if memory error occurs during build.
 
 export CFLAGS="${CFLAGS} -I${PREFIX}/include"
 export CXXFLAGS="${CFLAGS}"
@@ -9,5 +9,5 @@ export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
 
 ./autogen.sh
 ./configure --prefix=$PREFIX
-make -j ${CPU_COUNT} -C Python 
+make -j ${MULTI_THREAD} -C Python 
 sudo make -C Python install
