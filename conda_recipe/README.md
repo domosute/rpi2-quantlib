@@ -12,13 +12,13 @@ Reference (Japanese): [Create self-build enviornment for Raspberry Pi with using
 - Storage: 40GB
 ```
 2. Login and download [Raspbian Stretch image](https://downloads.raspberrypi.org/raspbian_lite_latest).  2018-04-18-raspbian-stretch.img was used.
-3. Attaching image to loopback device
+3. Attaching image to loopback device.
 ```
 $ sudo su
 # cd /opt
 # losetup -frP 2018-04-18-raspbian-stretch.img
 ```
-4. Checking with fdisk
+4. Checking with fdisk.
 ```
 # fdisk -l /dev/loop0
 Disk /dev/loop0: 4.6 GiB, 4953473024 bytes, 9674752 sectors
@@ -78,7 +78,7 @@ devpts on /opt/armv7l/dev/pts type devpts (rw,relatime,mode=600,ptmxmode=000)
 # uname -a
 Linux ubuntu 4.4.0-122-generic #146-Ubuntu SMP Mon Apr 23 15:34:04 UTC 2018 armv7l GNU/Linux
 ```
-12. Install Berryconda
+12. Install Berryconda and update conda environment.
 ```
 # cd /opt
 # cd /opt && \
