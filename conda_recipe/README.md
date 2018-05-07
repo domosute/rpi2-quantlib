@@ -87,7 +87,7 @@ chmod +x /opt/Berryconda3-2.0.0-Linux-armv7l.sh &&\
 /opt/Berryconda3-2.0.0-Linux-armv7l.sh -b -p /opt/conda && \
 /opt/conda/bin/conda update -y --prefix /opt/conda conda && \
 ```
-13. clone repo and start building
+13. clone this repo and start building packages.
 ``` 
 # cd /opt
 # git clone https://github.com/domosute/rpi2-quantlib.git
