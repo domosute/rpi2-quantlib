@@ -5,7 +5,9 @@ Building Quantlib and Quantlib-python package on Raspberry Pi platform failed du
 Reference (Japanese): [Create self-build enviornment for Raspberry Pi with using qemu](https://qiita.com/autch/items/c8c9cdc7b8e5821e81a4)
 
 1. Setup Ubuntu host:
-- Obtain [Ubuntu 16.04 LTS (Xenial Xerus) Netboot](http://archive.ubuntu.com/ubuntu/dists/xenial-updates/main/installer-amd64/current/images/netboot/) and bring up.  Below was the VM created for ESXi host. Adjust resorce accordingly.
+- Obtain [Ubuntu 16.04 LTS (Xenial Xerus) Netboot](http://archive.ubuntu.com/ubuntu/dists/xenial-updates/main/installer-amd64/current/images/netboot/) and bring it up.  
+
+Below was the VM created for ESXi host. Adjust resorce accordingly.
 ```
 - vCPU: 6
 - Memory: 16GB
