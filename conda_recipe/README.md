@@ -5,7 +5,7 @@ Building Quantlib and Quantlib-python package with Raspberry Pi platform fail du
 Reference: https://qiita.com/autch/items/c8c9cdc7b8e5821e81a4
 
 1. Setup Ubuntu host:
-- Obtain [Ubuntu 16.04 LTS (Xenial Xerus) Netboot]`http://archive.ubuntu.com/ubuntu/dists/xenial-updates/main/installer-amd64/current/images/netboot/` and bring up host.
+- Obtain [Ubuntu 16.04 LTS (Xenial Xerus) Netboot](http://archive.ubuntu.com/ubuntu/dists/xenial-updates/main/installer-amd64/current/images/netboot/) and bring up host.
 
 
 
