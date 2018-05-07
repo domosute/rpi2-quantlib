@@ -96,7 +96,7 @@ chmod +x /opt/Berryconda3-2.0.0-Linux-armv7l.sh &&\
 ```
 Package Build Dependency
 ------------
-QuantLib/QuantLib-Python have package dependency which must be resolved prior to the installation of QuantLib/QuantLib-Python. 
+QuantLib/QuantLib-Python have package dependency which must be resolved prior to the build of QuantLib/QuantLib-Python. 
 
 ```
 QuantLib
