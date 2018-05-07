@@ -11,7 +11,7 @@ Reference (Japanese): [Create self-build enviornment for Raspberry Pi with using
 - Memory: 16GB
 - Storage: 40GB
 ```
-2. Login and download [Raspbian Stretch image](https://downloads.raspberrypi.org/raspbian_lite_latest).  (2018-04-18-raspbian-stretch.img was installed on /opt directory)
+2. Login and download [Raspbian Stretch image](https://downloads.raspberrypi.org/raspbian_lite_latest).  2018-04-18-raspbian-stretch.img was used.
 3. Attaching image to loopback device
 ```
 $ sudo su
