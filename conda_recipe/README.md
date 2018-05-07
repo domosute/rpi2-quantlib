@@ -85,7 +85,7 @@ Linux ubuntu 4.4.0-122-generic #146-Ubuntu SMP Mon Apr 23 15:34:04 UTC 2018 armv
 wget https://github.com/jjhelmus/berryconda/releases/download/v2.0.0/Berryconda3-2.0.0-Linux-armv7l.sh && \
 chmod +x /opt/Berryconda3-2.0.0-Linux-armv7l.sh &&\
 /opt/Berryconda3-2.0.0-Linux-armv7l.sh -b -p /opt/conda && \
-/opt/conda/bin/conda update -y --prefix /opt/conda conda && \
+/opt/conda/bin/conda update -y --prefix /opt/conda conda
 ```
 13. clone this repo and start building packages.
 ``` 
