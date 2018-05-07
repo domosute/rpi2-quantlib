@@ -37,12 +37,12 @@ Device       Boot Start     End Sectors  Size Id Type
 # mount -o ro /dev/loop0p2 /mnt
 # tar jcvf raspbian-stretch-lite.tar.bz2 -C /mnt .
 ```
-6. Once the tarball is made, unmount and detatch loopback device.
+6. Once the tarball is created, unmount and detatch loopback device.
 ```
 # umount /mnt
 # losetup -D
 ```
-7. Create directory and untar the created tarball.
+7. Create directory and untar the tarball.
 ```
 # mkdir /opt/armv7l
 # tar jxvf /opt/raspbian-stretch-lite.tar.bz2 /opt/armv7l
