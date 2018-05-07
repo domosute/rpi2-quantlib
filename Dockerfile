@@ -12,7 +12,8 @@ chmod +x /opt/Berryconda3-2.0.0-Linux-armv7l.sh &&\
 /opt/Berryconda3-2.0.0-Linux-armv7l.sh -b -p /opt/conda && \
 /opt/conda/bin/conda update -y --prefix /opt/conda conda && \
 /opt/conda/bin/conda install -y jupyter numpy pandas && \
-/opt/conda/bin/conda install -y m4 icu autoconf automake libtool boost swig quantlib quantlib-python && \
+# Install Quantlib related packages
+/opt/conda/bin/conda install -y -c domosute m4 icu autoconf automake libtool boost swig quantlib quantlib-python && \
 # Setup for Jupyter Notebook
 echo "export PATH=/opt/conda/bin:$PATH" > /etc/profile.d/conda.sh && \
 groupadd -g 1000 jupyter && \
