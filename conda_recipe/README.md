@@ -1,5 +1,15 @@
-How to Build
+Preparing Build Environment
 ------------
+Building Quantlib and Quantlib-python package with Raspberry Pi platform fail due to scares of memory resource.  Rather than tweaking swapfile size or limiting multi-threading process, building was done on emulation enviornment under x86_64 platform with qemu.
+
+Reference: https://qiita.com/autch/items/c8c9cdc7b8e5821e81a4
+
+1. Setup Ubuntu host:
+- Obtain [Ubuntu 16.04 LTS (Xenial Xerus) Netboot]`http://archive.ubuntu.com/ubuntu/dists/xenial-updates/main/installer-amd64/current/images/netboot/` and bring up host.
+
+
+
+
 Under conda environment, execute the following;
 ``` 
 conda build .
