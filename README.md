@@ -3,7 +3,7 @@ Jupyter Notebook Docker image with QuantLib package for Raspberry Pi 2 (armv7l)
 
 Used [schachr/docker-raspbian-stretch](https://github.com/schachr/docker-raspbian-stretch) as base image, and [Berryconda](https://github.com/jjhelmus/berryconda) for jupyter notebook.
 
-How to Run the image
+How to Run the Image
 ------------
 Under docker-enabled environment, execute the following;
 ```
