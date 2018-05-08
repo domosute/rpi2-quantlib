@@ -24,7 +24,9 @@ echo "jupyter ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/jupyter && \
 chmod 0440 /etc/sudoers.d/jupyter && \
 echo "c.NotebookApp.token = 'jupyter'" > /home/jupyter/jupyter_notebook_config.py && \
 # Remove files to reduce image size
-rm -f Berryconda3-2.0.0-Linux-armv7l.sh
+rm -f Berryconda3-2.0.0-Linux-armv7l.sh && \
+# Clean up conda packages
+/opt/conda/bin/conda clean -y --all
 
 EXPOSE 8888
 USER jupyter
