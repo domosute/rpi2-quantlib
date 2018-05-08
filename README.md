@@ -1,14 +1,24 @@
-# rpi2-quantlib
-Jupyter Notebook Docker image for Raspberry Pi 2 (armv7l)
+# centos-quantlib
+Jupyter Notebook with Quantlib Docker image for x86_64 platform
 
-Used [resin/rpi-raspbian](https://hub.docker.com/r/resin/rpi-raspbian/) as base image, and [Berryconda](https://github.com/jjhelmus/berryconda) for jupyter notebook.
+Used [centos](https://hub.docker.com/_/centos/) as base image, and [Anaconda3 5.1.0](https://repo.continuum.io/archive/) for jupyter notebook.
 
-How to Run the image
+How to Run the Image
 ------------
-Under docker-enabled environment, execute the following;
+1. Clone this repository.
 ```
-docker run -d -it -p 8888:8888 -v $PWD:/home/jupyter --name rpi2-quantlib domosute/rpi2-quantlib
+git clone https://github.com/domosute/centos-quantlib.git
 ```
-where "$PWD" is outside working directory in case if persistent storage is preferred.
-
-By storing `jupyter_notebook_config.py` under working directory would enable password access instead of token. (default is set as 'jupyter')
+2. Change directory to notebook folder
+```
+cd ./centos-quantlib/notebook
+```
+3. Under docker-enabled environment, execute the following;
+```
+docker run -d -it -p 9999:9999 -v ${PWD}:/home/jupyter --name centos-quantlib domosute/centos-quantlib
+```
+4. Access via browser. Type 'jupyter' to access to notebook.
+```
+https://<IP address of docker mahcine>:9999
+```
+* Default password is 'jupyter'.  Modify `jupyter_notebook_config.py` accordingly.

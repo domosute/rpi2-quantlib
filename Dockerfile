@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian
+FROM schachr/raspbian-stretch:latest
 
 RUN apt-get update && \
 # Installing necessary packages for compilation
@@ -24,10 +24,12 @@ echo "jupyter ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/jupyter && \
 chmod 0440 /etc/sudoers.d/jupyter && \
 echo "c.NotebookApp.token = 'jupyter'" > /home/jupyter/jupyter_notebook_config.py && \
 # Remove files to reduce image size
-rm -f Berryconda3-2.0.0-Linux-armv7l.sh
+rm -f Berryconda3-2.0.0-Linux-armv7l.sh && \
+# Cleaning up Anaconda Package
+/opt/conda/bin/conda clean -y --all
 
-EXPOSE 8888
+EXPOSE 9999
 USER jupyter
 WORKDIR /home/jupyter
 
-CMD ["/bin/bash", "-c", "/opt/conda/bin/jupyter-notebook --ip=*"]
+CMD ["/bin/bash", "-c", "/opt/conda/bin/jupyter notebook --ip=*"]
