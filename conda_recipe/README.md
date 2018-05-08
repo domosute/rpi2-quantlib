@@ -42,7 +42,7 @@ Device       Boot Start     End Sectors  Size Id Type
 # umount /mnt
 # losetup -D
 ```
-7. Create directory and untar the tarball.
+7. Create a folder and untar the tarball into it.
 ```
 # mkdir /opt/armv7l
 # tar jxvf /opt/raspbian-stretch-lite.tar.bz2 /opt/armv7l
@@ -56,11 +56,11 @@ qemu-arm (enabled):
 qemu-armeb (enabled):
  interpreter = /usr/bin/qemu-armeb-static
 ```
-9. Copy qemu-arm-static from host.
+9. Copy qemu-arm-static from the host.
 ```
 cp /usr/bin/qemu-arm-static /opt/armv7l/usr/bin
 ```
-10. Mount /sys, /proc, and /dev from host. 
+10. Mount /sys, /proc, and /dev from the host. 
 ```
 # mount -t sysfs sysfs /opt/armv7l/sys
 # mount -t proc proc /opt/armv7l/proc
@@ -72,7 +72,7 @@ proc on /opt/armv7l/proc type proc (rw,relatime)
 udev on /opt/armv7l/dev type devtmpfs (rw,relatime,size=8197596k,nr_inodes=2049399,mode=755)
 devpts on /opt/armv7l/dev/pts type devpts (rw,relatime,mode=600,ptmxmode=000)
 ```
-11. chroot into the directory extracted from tarball.
+11. chroot into the folder.
 ```
 # chroot /opt/armv7l/ /bin/bash
 # uname -a
