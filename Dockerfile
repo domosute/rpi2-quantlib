@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 FROM schachr/raspbian-stretch:latest
+=======
+FROM schachr/raspbian-stretch
+>>>>>>> a36c8e3c15aa44383e22c30b635e1e9dc7546f32
 
 RUN apt-get update && \
 # Installing necessary packages for compilation
@@ -25,7 +29,11 @@ chmod 0440 /etc/sudoers.d/jupyter && \
 echo "c.NotebookApp.token = 'jupyter'" > /home/jupyter/jupyter_notebook_config.py && \
 # Remove files to reduce image size
 rm -f Berryconda3-2.0.0-Linux-armv7l.sh && \
+<<<<<<< HEAD
 # Cleaning up Anaconda Package
+=======
+# Clean up conda packages
+>>>>>>> a36c8e3c15aa44383e22c30b635e1e9dc7546f32
 /opt/conda/bin/conda clean -y --all
 
 EXPOSE 9999
