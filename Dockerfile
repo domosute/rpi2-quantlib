@@ -1,4 +1,4 @@
-FROM schachr/docker-raspbian-stretch
+FROM schachr/raspbian-stretch
 
 RUN apt-get update && \
 # Installing necessary packages for compilation
