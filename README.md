@@ -19,6 +19,6 @@ docker run -d -it -p 9999:9999 -v ${PWD}:/home/jupyter --name rpi2-quantlib domo
 ```
 4. Access via browser. Type 'jupyter' to access to notebook.
 ```
-https://<IP address of docker mahcine>:9999
+https://<IP address of docker host>:9999
 ```
 * Default password is 'jupyter'.  Modify `jupyter_notebook_config.py` accordingly.
