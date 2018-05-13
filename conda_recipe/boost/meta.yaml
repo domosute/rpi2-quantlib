@@ -5,8 +5,7 @@ package:
 source:
   fn:  boost_1_67_0.tar.bz2
   url: https://sourceforge.net/projects/boost/files/boost/1.67.0/boost_1_67_0.tar.bz2
-  md5: b2dfbd6c717be4a7bb2d88018eaccf75
-
+  md5: ced776cb19428ab8488774e1415535ab
 requirements:
   build:
     - python
