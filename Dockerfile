@@ -13,7 +13,7 @@ chmod +x /opt/Berryconda3-2.0.0-Linux-armv7l.sh &&\
 /opt/conda/bin/conda update -y --prefix /opt/conda conda && \
 /opt/conda/bin/conda install -y jupyter numpy pandas && \
 # Install Quantlib related packages
-/opt/conda/bin/conda install -y -c domosute m4 icu autoconf automake libtool boost swig quantlib quantlib-python && \
+/opt/conda/bin/conda install -y -c domosute m4 icu autoconf automake libtool boost swig quantlib quantlib-python ipyparallel && \
 # Setup for Jupyter Notebook
 echo "export PATH=/opt/conda/bin:$PATH" > /etc/profile.d/conda.sh && \
 groupadd -g 1000 jupyter && \
@@ -22,7 +22,10 @@ echo "jupyter:jupyter" | chpasswd && \
 mkdir -p /etc/sudoers.d && \
 echo "jupyter ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/jupyter && \
 chmod 0440 /etc/sudoers.d/jupyter && \
+# Below file enable password access instead of token
 echo "c.NotebookApp.token = 'jupyter'" > /home/jupyter/jupyter_notebook_config.py && \
+# Enable IPython cluster
+/opt/conda/bin/ipcluster nbextension enable && \
 # Remove files to reduce image size
 rm -f Berryconda3-2.0.0-Linux-armv7l.sh && \
 # Clean up conda packages
