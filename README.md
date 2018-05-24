@@ -15,7 +15,7 @@ cd ./rpi2-quantlib/notebook
 ```
 3. Under docker-enabled environment, execute the following;
 ```
-docker run -d -it -p 9999:9999 -v ${PWD}:/home/jupyter --name rpi2-quantlib domosute/rpi2-quantlib
+docker run -d -it -p 9999:9999 -v $PWD:/home/jupyter --name rpi2-quantlib domosute/rpi2-quantlib
 ```
 4. Access via browser. Type 'jupyter' to access to notebook.
 ```
