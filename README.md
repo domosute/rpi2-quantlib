@@ -25,6 +25,13 @@ https://<IP address of docker host>:9999
 
 How to Build the Image
 ------------
+
+Execute below in the directory where Dockerfile exists.
+
+```
+docker build -t <tag name> .
+```
+
 Verified build with Raspberry Pi 3 B+.
 `[Note]: Swapfile needs to be increased to pass the process. Observed successful build with 2GB setting.`
 
