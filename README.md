@@ -22,3 +22,22 @@ docker run -d -it -p 9999:9999 -v $PWD:/home/jupyter --name rpi2-quantlib domosu
 https://<IP address of docker host>:9999
 ```
 * Default password is 'jupyter'.  Modify `jupyter_notebook_config.py` accordingly.
+
+How to Build the Image
+------------
+Verified build with Raspberry Pi 3 B+.
+`[Note]: Swapfile needs to be increased to pass the process. Observed successful build with 2GB setting.`
+
+Edit 2 parameters of /etc/dphys-swapfile. (Example: set swap file to 2GB)
+
+```
+CONF_SWAPSIZE=2048
+CONF_MAXSWAP=2048
+```
+
+Then, update
+
+```
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
+```
