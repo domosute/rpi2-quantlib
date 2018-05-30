@@ -11,7 +11,7 @@ wget https://github.com/jjhelmus/berryconda/releases/download/v2.0.0/Berryconda3
 chmod +x /opt/Berryconda3-2.0.0-Linux-armv7l.sh &&\
 /opt/Berryconda3-2.0.0-Linux-armv7l.sh -b -p /opt/conda && \
 /opt/conda/bin/conda update -y --prefix /opt/conda conda && \
-/opt/conda/bin/conda install -y jupyter numpy pandas && \
+/opt/conda/bin/conda install -y jupyter numpy pandas matplotlib && \
 # Install Quantlib related packages
 /opt/conda/bin/conda install -y -c domosute m4 icu autoconf automake libtool boost swig quantlib quantlib-python ipyparallel && \
 # Setup for Jupyter Notebook
