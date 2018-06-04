@@ -80,7 +80,6 @@ Linux ubuntu 4.4.0-122-generic #146-Ubuntu SMP Mon Apr 23 15:34:04 UTC 2018 armv
 ```
 12. Install Berryconda and update conda environment.
 ```
-# cd /opt
 # cd /opt && \
 wget https://github.com/jjhelmus/berryconda/releases/download/v2.0.0/Berryconda3-2.0.0-Linux-armv7l.sh && \
 chmod +x /opt/Berryconda3-2.0.0-Linux-armv7l.sh &&\
