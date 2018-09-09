@@ -1,0 +1,51 @@
+{% set name = "schedule" %}
+{% set version = "0.5.0" %}
+{% set file_ext = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "1003a07c2dce12828c25a03a611a7371cedfa956e5f1b4abc32bcc94eb5a335b" %}
+
+package:
+  name: '{{ name|lower }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  host:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - schedule
+
+about:
+  home: https://github.com/dbader/schedule
+  license: MIT License
+  license_family: MIT
+  license_file: ''
+  summary: Job scheduling for humans.
+  description: "schedule\n========\n\n\n.. image:: https://api.travis-ci.org/dbader/schedule.svg?branch=master\n        :target: https://travis-ci.org/dbader/schedule\n\n.. image:: https://coveralls.io/repos/dbader/schedule/badge.svg?branch=master\n\
+    \        :target: https://coveralls.io/r/dbader/schedule\n\n.. image:: https://img.shields.io/pypi/v/schedule.svg\n        :target: https://pypi.python.org/pypi/schedule\n\nPython job scheduling for\
+    \ humans.\n\nAn in-process scheduler for periodic jobs that uses the builder pattern\nfor configuration. Schedule lets you run Python functions (or any other\ncallable) periodically at pre-determined\
+    \ intervals using a simple,\nhuman-friendly syntax.\n\nInspired by `Adam Wiggins' <https://github.com/adamwiggins>`_ article `\"Rethinking Cron\" <https://adam.herokuapp.com/past/2010/4/13/rethinking_cron/>`_\
+    \ and the `clockwork <https://github.com/Rykian/clockwork>`_ Ruby module.\n\nFeatures\n--------\n- A simple to use API for scheduling jobs.\n- Very lightweight and no external dependencies.\n- Excellent\
+    \ test coverage.\n- Tested on Python 2.7, 3.5, and 3.6\n\nUsage\n-----\n\n.. code-block:: bash\n\n    $ pip install schedule\n\n.. code-block:: python\n\n    import schedule\n    import time\n\n   \
+    \ def job():\n        print(\"I'm working...\")\n\n    schedule.every(10).minutes.do(job)\n    schedule.every().hour.do(job)\n    schedule.every().day.at(\"10:30\").do(job)\n    schedule.every(5).to(10).days.do(job)\n\
+    \    schedule.every().monday.do(job)\n    schedule.every().wednesday.at(\"13:15\").do(job)\n\n    while True:\n        schedule.run_pending()\n        time.sleep(1)\n\nDocumentation\n-------------\n\
+    \nSchedule's documentation lives at `schedule.readthedocs.io <https://schedule.readthedocs.io/>`_.\n\nPlease also check the FAQ there with common questions.\n\n\nMeta\n----\n\nDaniel Bader - `@dbader_org\
+    \ <https://twitter.com/dbader_org>`_ - mail@dbader.org\n\nDistributed under the MIT license. See ``LICENSE.txt`` for more information.\n\nhttps://github.com/dbader/schedule\n\n\n"
+  doc_url: ''
+  dev_url: ''
+
+extra:
+  recipe-maintainers: ''
