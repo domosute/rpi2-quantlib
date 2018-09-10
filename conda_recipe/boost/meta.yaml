@@ -1,11 +1,11 @@
 package:
   name: boost
-  version: 1.67.0
+  version: 1.68.0
 
 source:
-  fn:  boost_1_67_0.tar.bz2
-  url: https://sourceforge.net/projects/boost/files/boost/1.67.0/boost_1_67_0.tar.bz2
-  md5: ced776cb19428ab8488774e1415535ab
+  fn:  boost_1_68_0.tar.bz2
+  url: https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2
+  sha256: 7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7
 requirements:
   build:
     - python
