@@ -2,9 +2,7 @@
 
 set -x -e
 
-# ADDR_MODEL=64
 ADDR_MODEL=32
-# ADDR_MODEL=x86
 ARCH=arm
 
 INCLUDE_PATH="${PREFIX}/include"
