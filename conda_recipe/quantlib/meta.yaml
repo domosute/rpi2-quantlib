@@ -12,6 +12,7 @@ requirements:
     - autoconf
     - libtool
     - boost
+    - numpy >=1.16
   run:
 
 about:
