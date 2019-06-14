@@ -1,6 +1,6 @@
 package:
   name: quantlib-python
-  version: 1.14
+  version: 1.15
   
 source:
   git_url: https://github.com/lballabio/QuantLib-SWIG.git
