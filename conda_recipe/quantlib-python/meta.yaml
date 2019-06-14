@@ -9,6 +9,7 @@ requirements:
   build:
     - swig
     - python
+    - numpy >=1.16
   run:
     - python
 
