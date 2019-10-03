@@ -1,6 +1,6 @@
 package:
   name: quantlib
-  version: 1.15
+  version: 1.17
   
 source:
   git_url: https://github.com/lballabio/QuantLib.git
