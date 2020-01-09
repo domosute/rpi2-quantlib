@@ -1,9 +1,9 @@
 package:
   name: pcre
-  version: 8.42
+  version: 8.43
 
 source:
-  url: ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.42.tar.gz
+  url: ftp://ftp.pcre.org/pub/pcre/pcre-8.43.tar.gz
 
 requirements:
   build:
