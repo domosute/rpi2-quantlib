@@ -7,7 +7,7 @@ source:
   
 requirements:
   build:
-    - swig
+    - swig >=4.0.1
     - python >=3.7
     - numpy >=1.17.2
   run:
