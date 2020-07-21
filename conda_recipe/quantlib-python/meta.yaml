@@ -1,15 +1,15 @@
 package:
   name: quantlib-python
-  version: 1.17
+  version: 1.18.1
   
 source:
-  url: https://github.com/lballabio/QuantLib-SWIG/archive/QuantLib-SWIG-v1.17.tar.gz
-  
+  url: https://github.com/lballabio/QuantLib-SWIG/releases/download/QuantLib-SWIG-v1.18.1/QuantLib-SWIG-1.18.1.tar.gz
+
 requirements:
   build:
-    - swig >=4.0.1
+    - swig >=4.0.2
     - python >=3.7
-    - numpy >=1.17.2
+    - numpy >=1.19.0
   run:
     - python
 
